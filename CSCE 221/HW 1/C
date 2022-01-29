@@ -1,0 +1,16 @@
+An algorithm takes 0.5 ms for input size 100. How large a problem can be solved in
+1 min if the running time is the following (assume low-order terms are negligible)?
+a. linear
+b. O(N logN)
+c. quadratic
+d. cubic
+
+
+
+(a) x/100=60,000/0.5 and solving for x gives an input size of 12,000,000.
+
+(b) xlogx/(100 log 100)=60,000/0.5 and solving for x gives an input size of 3,656,807.
+
+(c) x^2/(100^2)=60,000/0.5 and solving for x gives an input size of 34,641.
+
+(d) x^3/(100^3)=60,000/0.5 and solving for x gives an input size of 4,932.5

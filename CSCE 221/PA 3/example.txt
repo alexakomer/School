@@ -1,0 +1,4 @@
+this is my testing document
+here i will be determining what does and does not work from my code
+yes, my code. i went ham on it
+don't let anyone tell you otherwise.
