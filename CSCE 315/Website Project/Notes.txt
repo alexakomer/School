@@ -1,0 +1,41 @@
+My Response:
+In Shaheen's website, I saw a website that was more developed than mine. I saw CSS that inspired me and a clean, modular design that will lend itself well to dynamic stylesheets.
+I also saw creativity in Steven's design such as having music play in the background that I think could be well-implemented in a website.
+In my feedback, the consistency was found in my lack of style (particularly in my headers and navbar). There are also plenty more recommendations, some slightly tied to my content but more about layout/stylistic changes.
+Going forward, I am going to strip the bits of CSS I have included in my HTML so that I can fully flesh out my CSS class. This will allow the implementation of a second class to be much smoother.
+Padding is something that needs to be considered in many cases across my website.
+
+
+
+Shaheen - Content
+Home
+! - Maybe don't say code monkey
+! - Go from talking about front-end to cybersecurity so front-end cyber?
+Portfolio
+- GitHub link too big and out of place. Integrate it better maybe separate github links to projects
+! - Weird text formatting when it says email
+- I would say elaborate more about projects and give it a bit better organization
+Qualifications
+- I like the embedded resume, maybe write a small excerpt before
+Service
+- Good but maybe bold header or add a bit more padding
+Visual
+- Work on contrast
+- Perhaps a more subtle gray background for home
+- Maybe try to go for a theme that represents your general professional image
+
+
+Steven - Content
+-The layout can be improved
+-Missing the 2 styles 
+-Can improve on the headers/menu bar on each page
+-Improve on the fonts for different pages
+-on the qualifications page should add a preview and downloand of the resume so people can see clearly what's in your resume begore downlaoding.
+
+
+
+
+
+
+
+

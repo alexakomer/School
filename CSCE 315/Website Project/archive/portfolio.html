@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <STYLE>
+            a:hover{
+              background-color: grey;
+            }
+        </STYLE>
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <title>Portfolio</title>
+        
+    </head>
+    <body>
+        <STYLE>
+            body{
+                background-image: linear-gradient(to bottom right,#444444, #dddddd);
+            }
+        </STYLE>
+        <div class="header" id="myHeader">
+            <img class="img-logo" src="img/logo.png" alt="my logo">
+            <img class="img-logo2" src="img/logo.png" alt="my logo2">
+            <div class="inner_header">
+                <div class="logo_container">
+                    <h1>Jeremy Basso</h1>
+                </div>
+
+                <ul class="navigation">
+                    <a href='index.html'><li>Home</li></a>
+                    <a href='about.html'><li>About Me</li></a>
+                    <a href='qualifications.html'><li>Qualifications</li></a>
+                    <a href='portfolio.html'><li>Portfolio</li></a>
+                    <a href='service.html'><li>Service</li></a>
+                </ul>
+
+            </div>
+        </div>
+        
+        <div class="page_title">
+            <h3 class="page_subtitle">
+                Portfolio
+            </h3>
+        </div>
+        <div id="banner">
+            <div class="inline-block">
+                <img class ="portfolio-img"src ="img/Autochess.PNG" alt="autochess">
+                <p class="img-description">
+                    Recreation of the popular RTS game "AutoChess". Created using
+                    C# and Unity Game Engine. Made during hackathon "Hack-Girl-Summer-2020"
+                </br>
+            </br>
+                GitHub:<a href="https://github.com/mhulcy/Avatar-Battle-Arena">Avatar-Battle-Arena</a>
+                </p>
+            </div>
+        
+            <div class="inline-block">
+                <img class ="portfolio-img" src ="img/Securify.PNG" alt="securify">
+                <p class="img-description">
+                    Website developed with Django and Python used to parse user email
+                    and look for potentially sensitive information that needs to be protected/deleted.
+                </br>
+                </br>
+                Github:<a href="https://github.com/Shaheen-Ebrahimi/Email-Security" target="_blank">Email-Security</a>
+                </p>
+            </div>
+        
+            <div class="inline-block">
+                <img class ="portfolio-img" src ="img/Store.PNG" alt="storebackend" height=100px>
+                <p class="img-description">
+                    Store backend built in C++ used to simulate store sales and processing
+                    everything a company would need to keep track of iventory and distrabution accurately.
+                </p>
+            </div>
+
+            <div class="inline-block">
+                <img class ="portfolio-img" src ="img/MountainPaths.PNG" alt="greedyAlgorithm">
+                <p class="img-description">
+                    Greedy algorithm in C++ used to find the path of least elevation
+                    change when given a .dat file of elevation values. Produces a relevant
+                    ppm file witht he calculated solutions displayed over file.
+                </p>
+            </div>
+        </div>
+        <!-- <div class="social_menu">
+            <ul>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                <li><a href="#"><i class="fa fa-github"></i></a></li>
+            </ul>
+        </div> -->
+        <script>
+            window.onscroll = function() {myFunction()};
+
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+
+            function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            }
+            // } else {
+            //     header.classList.remove("sticky");
+            //     }
+            }
+        </script>
+    </body>
+</html>

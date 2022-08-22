@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <STYLE>
+            a:hover{
+              background-color: grey;
+            }
+        </STYLE> 
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <title>Jeremy Basso</title>
+        
+    </head>
+    <body>
+        <STYLE>
+            body{
+                background-image: linear-gradient(to bottom right,#444444, #dddddd);
+            }
+        </STYLE>
+        <div class="header" id="myHeader">
+            <img class="img-logo" src="img/logo.png" alt="my logo">
+            <img class="img-logo2" src="img/logo.png" alt="my logo2">
+            <div class="inner_header">
+                <div class="logo_container">
+                    <h1>Jeremy Basso</h1>
+                </div>
+
+                <ul class="navigation">
+                    <a href='index.html'><li>Home</li></a>
+                    <a href='about.html'><li>About Me</li></a>
+                    <a href='qualifications.html'><li>Qualifications</li></a>
+                    <a href='portfolio.html'><li>Portfolio</li></a>
+                    <a href='service.html'><li>Service</li></a>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="page_title">
+            <h3 class="page_subtitle">
+                Howdy World!
+            </h3>
+            <div class="page_description">
+                <p class="home_description">
+                    Whats the object-oriented way to become wealthy?
+                    <br/>
+                    <br/>
+                    Inheritence!!!!....ahaha
+                    <br/>
+                    <br/>
+                    <br/>
+                    Howdy! My name is Jeremy Basso, and I currently live in 
+                    College Station as a Sophomore Computer Science Major. I'm also currently
+                    studying to get my Masters in <a href="https://mays.tamu.edu/ms-finance/" target="_blank">Finance</a> concurrently with
+                    my undergraduate degree. Welcome to my portfolio website.
+                    I've created this website in order to both gain
+                    an understanding of website development and use this
+                    as a reasource to showcase myself as a programmer!
+                </p>
+            </div>
+        </div>
+        <div class="social_menu">
+            <ul>
+                <li><a href="https://www.instagram.com/jeremy.basso/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/jeremy-basso-2785131b2?trk=public_profile_samename-profile_profile-result-card_result-card_full-click" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/JeremyBasso" target="_blank"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://github.tamu.edu/jmb4433" target="_blank"><i class="fa fa-github"></i></a></li>
+            </ul>
+        </div>
+        <script>
+            window.onscroll = function() {myFunction()};
+
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+
+            function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            }
+            // } else {
+            //     header.classList.remove("sticky");
+            //     }
+            }
+        </script>
+    </body>
+</html>

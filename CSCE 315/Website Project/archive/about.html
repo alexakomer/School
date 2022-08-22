@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <STYLE>
+            a:hover{
+              background-color: grey;
+            }
+        </STYLE>
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <title>About Me</title>
+        
+    </head>
+    <body>
+        <STYLE>
+            body{
+                background-image: linear-gradient(to bottom right,#444444, #dddddd);
+            }
+        </STYLE>
+        <div class="header" id="myHeader">
+            <img class="img-logo" src="img/logo.png" alt="my logo">
+            <img class="img-logo2" src="img/logo.png" alt="my logo2">
+            <div class="inner_header">
+                <div class="logo_container">
+                    <h1>Jeremy Basso</h1>
+                </div>
+
+
+
+                <ul class="navigation">
+                    <a href='index.html'><li>Home</li></a>
+                    <a href='about.html'><li>About Me</li></a>
+                    <a href='qualifications.html'><li>Qualifications</li></a>
+                    <a href='portfolio.html'><li>Portfolio</li></a>
+                    <a href='service.html'><li>Service</li></a>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="page_title">
+            <h3 class="page_subtitle">
+                A little more about me
+            </h3>
+            <img class="img-about-me-right" src="img/Jeremy.JPG" alt="Professional headshot">
+            <div class="page_description_left">
+                <p class="paragraph_about_me">
+                    Howdy!...again. My name is Jeremy Basso and I am a Sophomore Computer
+                    Science major at <a href="https://engineering.tamu.edu/cse/index.html" target="_blank">Texas A&M</a>. Two years, four semesters, and three hackathons
+                    into my education and it's safe to say that I am living the dream. With
+                    each subject in computer science that I explore, I continue to find myself
+                    chasing knowledge down the rabbit hole that is the ever expanding and
+                    seemingly infinite domain which is Computer Science. From web development
+                    to machine learning, there is yet to be a field in which I don't find fascinating.
+                    I hope that by the end of my education here at A&M I've been able to reach
+                    each and every corner of this computer generated world and come out ready 
+                    to take on, create, and innovate new ones.
+                </p>
+            </div>
+                <h3 class="page_subtitle2">
+                        How it all started
+                </h3>
+                <img class="img-about-me-left" src="img/alphastar.gif" alt="alphastarin action">
+                <div class="page_description_right">
+                    <p class="paragragh_about_me_right">
+                        AlphaStar is a machine learning program created by the UK based company
+                        DeepmindAI. As an avid gamer in highschool, I first found this project while
+                        playing the real-time strategy game Starcraft 2. Starcraft 2, a competitive
+                        resource 
+                        collecting, military strategy game is all about making split-second
+                        decisions with limited and/or imcomplete information. This provided the
+                        perfect enviornment in which to train an AI as the program was forced to
+                        make decisions with limited and/or incomplete information.This concept is applicable
+                        in real world scenarios as you rarely have all the facts when making decisions.
+                        It was this first exposure to a field in computer science that initially piqued my interest
+                        into the subject and I still keep up with the project today. DeepMindAI today has been aquired
+                        by Google and continues to work on AlphaStar and other machine learning projects
+                        mainly centered around neuroscience research and other medical related fields.
+                        While I live an ocean away from DeepMindAI, it is a goal of mine to work
+                        with DeepMindAI in the future.
+                    </br>
+                    </br>
+                    <a href="https://deepmind.com/blog/article/alphastar-mastering-real-time-strategy-game-starcraft-ii" target="_blank">More on AlphaStar</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="social_menu">
+            <ul>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                <li><a href="#"><i class="fa fa-github"></i></a></li>
+            </ul>
+        </div> -->
+        <script>
+            window.onscroll = function() {myFunction()};
+
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+
+            function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            }
+            // } else {
+            //     header.classList.remove("sticky");
+            //     }
+            }
+
+        </script>
+    </body>
+</html>
