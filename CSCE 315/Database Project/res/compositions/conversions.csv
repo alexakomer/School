@@ -1,0 +1,103 @@
+﻿ItemID,SKU,conversion Factor,description,conversion units
+1,c1001,0.0046875,chicken strip,lbs
+1,d2001,0.00001,flour,50 lb sack
+1,d2002,0.00001,salt,50 lb bag
+1,d2003,0.0001,black pepper,5lb jar
+1,d2012,0.000285714,fryer oil,35 lb bucket
+1,d2005,0.0001,garlic powder,5lb case
+1,c1004,0.0001,ranch,1 gal ranch
+1,d2007,0.0005,ketchup packets,1000 packet case
+1,d2006,0.000166667,ketchup containers,case red gold
+1,d2008,0.00025,mayo,case mayo
+1,d2027,0.000166667,napkin,case napkin
+1,d2034,0.0004,small box,450 case
+1,d2035,0.0005,large box,200 case
+2,d2004,0.005882353,bread,case bread
+2,c1003,0.00001,margarine,case margarine
+3,c1002,0.06875,potato salad,case potato salad
+3,d2032,0.0004,potato salad cup,case cups
+3,d2033,0.0004,potato salad lid,case lids
+4,d2011,0.000976563,Worcestershire Sauce,case sauce
+4,d2006,0.000651042,ketchup containers,case ketchup
+4,d2008,0.00078125,Mayo,case mayo
+4,c1004,0.00390625,Ranch,1 gal ranch
+5,d2023,0.00125,Straw,pack straws
+5,d2024,0.001,Lid,pack lids
+5,d2025,0.001,10oz cup,pack cups
+5,d2013,0.000434028,Dr Jones,3 gal bag
+5,d2014,0.000434028,Orange Cream,4 gal bag
+5,d2015,0.000434028,Root Beer,5 gal bag
+5,d2016,0.000434028,Cola ,6 gal bag
+5,d2017,0.000434028,Lemon Lime ,7 gal bag
+5,d2018,0.000434028,sugar free cola,8 gal bag
+6,d2009,0.000416667,tea,case tea bags
+6,d2010,0.0000012,sugar ,case sugar
+1,d2028,0.008,cutlery,case cutlery
+8,f3002,0.025,fries,case fries
+8,d2002,0.00005,salt,50 lb bag
+8,d2003,0.0005,black pepper,5lb jar
+8,d2012,0.001428571,fryer oil,35 lb bucket
+8,d2005,0.0005,garlic powder,5lb case
+8,c1004,0.0005,ranch,1 gal ranch
+8,d2007,0.0025,ketchup packets,1000 packet case
+8,d2006,0.000833333,ketchup containers,case red gold
+8,d2008,0.00125,mayo,case mayo
+8,d2027,0.000333333,napkin,case napkin
+8,d2034,0.0004,small box,450 case
+8,d2035,0.0005,large box,200 case
+9,d2004,0.011764706,bread,case bread
+9,c1005,0.002083333,cheese,block cheese
+9,c1003,0.00002,margarine,case margarine
+10,c1001,0.28125,chicken,lbs
+10,d2004,0.011764706,bread,case bread
+10,d2002,0.00001,salt,50 lb bag
+10,d2003,0.0001,black pepper,5lb jar
+10,c1005,0.001041667,cheese,block cheese
+10,d2005,0.0001,garlic powder,5lb case
+10,c1004,0.0001,ranch,1 gal ranch
+10,d2007,0.0005,ketchup packets,1000 packet case
+10,d2006,0.000166667,ketchup containers,case red gold
+10,d2008,0.00025,mayo,case mayo
+10,d2027,0.000333333,napkin,case napkin
+10,d2034,0.0028,small box,450 case
+10,d2035,0.001,large box,200 case
+10,c1006,0.006666667,bacon ,case bacon
+11,c1001,0.28125,chicken strip,lbs
+11,d2001,0.00003,flour,50 lb sack
+11,d2002,0.00003,salt,50 lb bag
+11,d2003,0.0003,black pepper,5lb jar
+11,d2012,0.000857143,fryer oil,35 lb bucket
+11,d2005,0.0003,garlic powder,5lb case
+11,c1004,0.0003,ranch,1 gal ranch
+11,d2007,0.0015,ketchup packets,1000 packet case
+11,d2006,0.0005,ketchup containers,case red gold
+11,d2008,0.00075,mayo,case mayo
+11,d2027,0.0005,napkin,case napkin
+11,d2034,0.0028,small box,450 case
+11,d2035,0.001,large box,200 case
+11,d2028,0.008,cutlery,case cutlery
+,,,,
+13,d2037,0.00125,hand soap,case soap
+13,d2038,0.0025,hand sanitizer,case 
+13,d2039,0.000833333,dish soap,case
+13,d2040,2.08E-06,paper towel,case
+13,d2041,0.00001,gloves,case
+13,d2042,0.00001,can liner,case
+13,d2043,0.00002,lg can liner,case
+13,d2044,0.000208333,toilet paper,case
+13,d2045,0.000833333,spray cleaner,case
+13,d2046,0.000111111,floor cleaner,tub
+14,d2023,0.00125,Straw,pack straws
+14,d2024,0.001,Lid,pack lids
+14,d2026,0.001,16oz cup,pack cups
+14,d2013,0.001041667,Dr Jones,3 gal bag
+14,d2014,0.001041667,Orange Cream,3 gal bag
+14,d2015,0.001041667,Root Beer,3 gal bag
+14,d2016,0.001041667,Cola ,3 gal bag
+14,d2017,0.001041667,Lemon Lime ,3 gal bag
+4,d2031,0.0004,Sauce Lid,case
+4,d2030,0.0004,Sauce cup,case
+12,d2019,0.010416667,Bottle Root Beer,case
+12,d2020,0.010416667,Bottle Cream Soda,case
+12,d2021,0.010416667,Bottle Orange & Cream,case
+12,d2022,0.010416667,Bottle Berry Lemonade,case

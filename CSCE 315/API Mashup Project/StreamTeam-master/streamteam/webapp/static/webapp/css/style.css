@@ -1,0 +1,189 @@
+/* Tag Overrides */
+body,h1,h2,h3,h4,h5,h6,p,button,li {
+    font-family: "Raleway", sans-serif;
+    
+}
+
+html, body {
+    height: 100%;
+    line-height: 1.8;
+}
+
+.fullPage {
+    min-height: 100% !important;
+}
+
+/* Modes */
+.primary {
+    background: white !important;
+    color: #0a2463 !important;
+    border-color: #0a2463 !important;
+}
+
+.secondary {
+    background: #E8E8E8 !important;
+    color: #0a2463 !important;
+    border-color: #0a2463 !important;
+}
+
+.tertiary {
+    background: #0a2463 !important;
+    color: white !important;
+    border-color: white !important;
+}
+
+.dark .primary {
+    background: #0d0c19 !important;
+    color: white !important;
+    border-color: white !important;
+}
+
+.dark .secondary {
+    background: #1f213a !important;
+    color: white !important;
+    border-color: white !important;
+}
+
+.dark .tertiary {
+    background: #0d0c19 !important;
+    color: white !important;
+    border-color: white !important;
+}
+
+/* Modes */
+
+/* W3 Overrides */
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+
+/* Custom Riverbed Styles */
+.rb-img-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("../src/header_img.jpg");
+    min-height: 100%;
+  }
+
+.rb-logo-1 {
+    height:24px;
+    width:24px;
+}
+
+.rb-button-1 {
+    background-color: #0a2463;
+    color: white;
+}
+
+.rb-text-1 {
+    color: #0a2463;
+}
+
+.rb-carousel-item-1 {
+    padding-top:64px;
+    padding-bottom:64px;
+    width:100%;
+    cursor:pointer;
+}
+
+.rb-carousel-item-2 {
+    height:100%;
+    width:100%;
+    cursor:pointer;
+}
+
+.rb-row-container {
+    display:flex;
+    align-items:stretch;
+}
+
+.rb-row-element-1 {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.translateBar {
+    padding-top: 39px;
+}
+
+.result {
+    flex: 1;
+}
+
+.chartMenu {
+    width: 100vw;
+    height: 40px;
+    background: #1A1A1A;
+  }
+  .chartMenu p {
+    padding: 10px;
+    font-size: 20px;
+  }
+  .chartCard {
+    width: 100vw;
+    height: calc(100vh - 40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .chartBox {
+    width: 700px;
+    padding: 20px;
+    border-radius: 20px;
+    border: solid 3px rgba(255, 26, 104, 1);
+    background: white;
+  }
+
+/* Spinner */
+.rb-spinner {
+    display: block;
+    width: 64px;
+    height: 64px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.rb-spinner:after {
+    display: block;
+    content: " ";
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid black;
+    border-color: #0a2463 transparent #0a2463 transparent;
+    animation: rb-spinner 1.6s linear infinite;
+}
+@keyframes rb-spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.dark .rb-spinner {
+    display: block;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.dark .rb-spinner:after {
+    display: block;
+    content: " ";
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid black;
+    border-color: white transparent white transparent;
+    animation: rb-spinner 1.6s linear infinite;
+}

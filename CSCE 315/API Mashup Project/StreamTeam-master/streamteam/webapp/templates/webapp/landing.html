@@ -1,0 +1,212 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RIVERBED</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="{% static 'webapp/src/logo.png' %}">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{% static 'webapp/css/style.css' %}">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script type="text/javascript" src="{% static 'webapp/js/main.js' %}"></script>
+  <script type="text/javascript" src="{% static 'webapp/js/account.js' %}"></script>
+</head>
+
+<!-- Navbar (sit on top) -->
+  <div class="w3-top dark primary" id="navbar">
+    <div class="w3-bar w3-card dark primary" id="top-navbar">
+      <a href="/" class="w3-bar-item w3-button w3-wide"><img src="{% static 'webapp/src/logo.png' %}" class="rb-logo-1"></img>&hairsp;IVERBED</a>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button" id="mode" onclick="clickMode()"><i>DARK</i></a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small dark primary" id="top-right-navbar">
+        <div class="w3-bar-item" id="google_translate_element" style="margin-top:8px"></div>
+        <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="#features" class="w3-bar-item w3-button">FEATURES</a>
+        <a href="#services" class="w3-bar-item w3-button">SERVICES</a>
+        <a href="/login" id="login" class="w3-bar-item w3-button rb-button-1">LOGIN</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+      <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleNav()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-hide-medium w3-hide-large dark primary" style="display:none;" id="sidebar">
+    <div class="w3-bar-item" id="google_translate_element" style="margin-top:8px"></div>
+    <a onclick="closeNav()" class="w3-bar-item w3-button w3-large w3-padding-16"><i class="fa fa-chevron-left"></i></a>
+    <a href="#about" onclick="closeNav()" class="w3-bar-item w3-button rb-text-1">ABOUT</a>
+    <a href="#features" onclick="closeNav()" class="w3-bar-item w3-button rb-text-1">FEATURES</a>
+    <a href="#services" onclick="closeNav()" class="w3-bar-item w3-button rb-text-1">SERVICES</a>
+    <a href="/login" id="login" class="w3-bar-item w3-button rb-button-1">LOGIN</a>
+  </nav>
+
+<body class="dark secondary" onload="landingLoad()">
+  <!-- Header with full-height image -->
+  <header class="rb-img-1 w3-display-container w3-grayscale-min w3-center" id="home">
+    <div class="w3-display-middle w3-text-white w3-center" style="padding:48px">
+      <span class="w3-jumbo w3-hide-small w3-wide">RIVERBED</span><br>
+      <span class="w3-large">Where All Streams Meet</span>
+      <p><a href="/register" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-hover-opacity-off">Get Started</a></p>
+    </div> 
+  </header>
+
+  <!-- About Section -->
+<div class="w3-container dark primary" style="padding:64px 16px" id="about">
+  <h3 class="w3-center">ABOUT</h3>
+  <div class="w3-center" style="margin-left:30%; margin-right:30%;">
+    <p>Get the most out of your streaming services. Riverbed is a free-to-use platform that connects all of your subscribed services in one centralized hub. With support for a wide array of popular streaming services, say goodbye to switching between services and hello to easy streaming.</p>
+  </div>
+</div>
+
+  <!-- Features Section -->
+  <div class="w3-container dark secondary" style="padding:64px 16px" id="features">
+    <h3 class="w3-center">FEATURES</h3>
+    <div class="w3-row-padding w3-center" style="margin-top:64px">
+      <div class="w3-third">
+        <i class="fa fa-search w3-margin-bottom w3-jumbo w3-center"></i>
+        <p class="w3-large">Search</p>
+        <p>Want to watch a specific title but don't know where it's available? Search for the show using our service and it will provide you with the available services and a link to directly watch them!</p>
+      </div>
+      <div class="w3-third">
+        <i class="fa fa-safari w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large">Explore</p>
+        <p>Having trouble finding what to watch? Browse across all of your streaming services without switching sites! Discover top-trending movies and recommended shows across all platforms!</p>
+      </div>
+      <div class="w3-third">
+        <i class="fa fa-pie-chart w3-margin-bottom w3-jumbo"></i>
+        <p class="w3-large">Analyze</p>
+        <p>Not sure which streaming services are worth it? Using our recommendation algorithms we can help you decide which services may not be worth the money and which services you may want to consider subscribing to.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Statistics -->
+  <div class="w3-container w3-row w3-center w3-padding-64 dark tertiary">
+    <div class="w3-quarter">
+      <span class="w3-xxlarge">20</span>
+      <br>Services Supported
+    </div>
+    <div class="w3-quarter">
+      <span class="w3-xxlarge">60+</span>
+      <br>Countries Supported
+    </div>
+    <div class="w3-quarter">
+      <span class="w3-xxlarge">55k+</span>
+      <br>Global Customers
+    </div>
+    <div class="w3-quarter">
+      <span class="w3-xxlarge">$70k+</span>
+      <br>Saved in Subscriptions
+    </div>
+  </div>
+
+  <!-- Services Section -->
+  <div class="w3-container dark secondary" style="padding:64px 16px;" id="services">
+    <h3 class="w3-center">SERVICES</h3>
+
+    <div class="w3-row-padding" style="margin-top:64px">
+      <div class="w3-col l2 m4">
+        <img src="{% static 'webapp/src/netflix.png' %}" style="width:100%" class="w3-hover-opacity" alt="Netflix">
+      </div>
+      <div class="w3-col l2 m4">
+        <img src="{% static 'webapp/src/hulu.png' %}" style="width:100%" class="w3-hover-opacity" alt="Hulu">
+      </div>
+      <div class="w3-col l2 m4">
+        <img src="{% static 'webapp/src/hbo.png' %}" style="width:100%" class="w3-hover-opacity" alt="HBO">
+      </div>
+      <div class="w3-col l2 m4">
+        <img src="{% static 'webapp/src/paramount.png' %}" style="width:100%" class="w3-hover-opacity" alt="Paramount Plus">
+      </div>
+      <div class="w3-col l2 m4">
+        <img src="{% static 'webapp/src/disney.png' %}" style="width:100%" class="w3-hover-opacity" alt="Disney Plus">
+      </div>
+      <div class="w3-col l2 m4">
+        <img src="{% static 'webapp/src/prime.png' %}" style="width:100%" class="w3-hover-opacity" alt="Amazon Prime Video">
+      </div>
+    </div>
+
+    <div class="w3-row-padding w3-section">
+      <div class="w3-col l2 m4">
+        <img src="{% static 'webapp/src/peacock.png' %}" style="width:100%" class="w3-hover-opacity" alt="Peacock">
+      </div>
+      <div class="w3-col l2 m4">
+        <img src="{% static 'webapp/src/apple.png' %}" style="width:100%" class="w3-hover-opacity" alt="Apple TV">
+      </div>
+      <div class="w3-col l2 m4">
+        <img src="{% static 'webapp/src/starz.png' %}" style="width:100%" class="w3-hover-opacity" alt="STARZ">
+      </div>
+      <div class="w3-col l2 m4">
+        <img src="{% static 'webapp/src/showtime.png' %}" style="width:100%" class="w3-hover-opacity" alt="SHOWTIME">
+      </div>
+      <div class="w3-col l2 m4">
+        <img src="{% static 'webapp/src/mubi.png' %}" style="width:100%" class="w3-hover-opacity" alt="Mubi">
+      </div>
+      <div class="w3-col l2 m4">
+        <div class="w3-center w3-xxlarge w3-button" onclick="openModal('more')" style="width:100%;padding-top:35%;padding-bottom:35%">MORE +</div>
+        
+        <div id="more" class="w3-modal">
+          <div class="w3-modal-content w3-animate-top">
+              <span onclick="closeModal('more')" class="w3-button w3-display-topright" style="background:transparent;color:white;height:48px;width:48px; margin-top:8px;margin-right:8px; padding-bottom:8px; padding-top:10px;"><i class="fa fa-close"></i></span>
+              <div class="w3-alert w3-pale-blue">
+              <h3 class="w3-blue w3-center" style="padding-top:10px; padding-bottom:10px;">Full List of Services</h3>
+              <ol class="">
+                <li class="w3-padding-small">Netflix</li>
+                <li class="w3-padding-small">Amazon Prime Video</li>
+                <li class="w3-padding-small">Disney+</li>
+                <li class="w3-padding-small">HBO Max</li>
+                <li class="w3-padding-small">Hulu</li>
+                <li class="w3-padding-small">Peacock</li>
+                <li class="w3-padding-small">Paramount+</li>
+                <li class="w3-padding-small">Starz</li>
+                <li class="w3-padding-small">Showtime</li>
+                <li class="w3-padding-small">Apple TV+</li>
+                <li class="w3-padding-small">Mubi</li>
+                <li class="w3-padding-small">Stan</li>
+                <li class="w3-padding-small">Now</li>
+                <li class="w3-padding-small">Crave</li>
+                <li class="w3-padding-small">All 4</li>
+                <li class="w3-padding-small">BBC iPlayer</li>
+                <li class="w3-padding-small">BritBox</li>
+                <li class="w3-padding-small">Hotstar</li>
+                <li class="w3-padding-small">Zee5</li>
+                <li class="w3-padding-small">Curiosity Stream</li>
+              </ol>
+              
+              </div>
+          </div>
+        </div>
+        
+        <div id="more" class="w3-modal">
+          <div class="w3-modal-content w3-animate-right">
+            <div class="w3-container" style="max-height:75%; overflow:scroll;">
+              <span onclick="closeModal('more')" class="w3-button w3-display-topright" style="height:48px; width:48px;"><i class="fa fa-close"></i></span>
+              <
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-text-white w3-padding-64 dark tertiary" id="foot">
+    <h4 class="w3-text-white">Contact Us</h4>
+    <h5 class="w3-text-white">1-800-478-7326</h5>
+    <div class="w3-xlarge w3-section">
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+  </footer>
+
+</html>

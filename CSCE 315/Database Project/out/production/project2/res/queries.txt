@@ -1,0 +1,118 @@
+// Denote any non-sql statement with double forward slashes, they will be printed to console by parser.
+// Query 1
+// This query calculates the cost of a 2oz Laynes sauce
+SELECT sum(inventory.price * conversions."conversionFactor") as Result FROM conversions
+INNER JOIN inventory ON inventory.sku = conversions.sku
+WHERE conversions."itemID" = 4;
+
+// Query 2
+// This query calculates the cost of a 5 tender meal
+SELECT sum(inventory.price *  orderdecomposition.quantity * conversions."conversionFactor") AS result
+FROM orderdecomposition
+INNER JOIN conversions ON orderdecomposition."itemID" = conversions."itemID"
+INNER JOIN inventory ON conversions.sku = inventory.sku
+WHERE orderdecomposition."menuID" = 501;
+
+// Query 3
+// This query calculates the cost of a club sandwich meal
+SELECT sum(inventory.price *  orderdecomposition.quantity * conversions."conversionFactor") AS result
+FROM orderdecomposition
+INNER JOIN conversions ON orderdecomposition."itemID" = conversions."itemID"
+INNER JOIN inventory ON conversions.sku = inventory.sku
+WHERE orderdecomposition."menuID" = 507;
+
+// Query 4
+// This query orders the ingredients of a 5 tender meal by most expensive to least expensive
+SELECT conversions.description, sum(orderdecomposition.quantity * conversions."conversionFactor" * inventory.price) AS cost
+FROM orderdecomposition
+         INNER JOIN conversions ON orderdecomposition."itemID" = conversions."itemID"
+         INNER JOIN inventory ON conversions.sku = inventory.sku
+WHERE orderdecomposition."menuID" = 501
+group by conversions.description
+order by cost desc ;
+
+// Query 5
+// This query orders menu items by the most expensive to least expensive to produce
+SELECT menu."menuItem", sum(orderdecomposition.quantity * conversions."conversionFactor" * inventory.price) AS cost,
+       menu.name
+FROM orderdecomposition
+INNER JOIN conversions ON orderdecomposition."itemID" = conversions."itemID"
+INNER JOIN inventory ON conversions.sku = inventory.sku
+INNER JOIN menu on menu."menuItem" = orderdecomposition."menuID"
+group by "menuItem"
+order by cost desc ;
+
+// Query 6
+// This query orders menu items by the most profitable to least profitable
+SELECT menu."menuItem", menu.price - sum(orderdecomposition.quantity * conversions."conversionFactor" * inventory.price) AS cost,
+       menu.name
+FROM orderdecomposition
+INNER JOIN conversions ON orderdecomposition."itemID" = conversions."itemID"
+INNER JOIN inventory ON conversions.sku = inventory.sku
+INNER JOIN menu on menu."menuItem" = orderdecomposition."menuID"
+group by "menuItem"
+order by cost desc ;
+
+// Query 7
+// This query calculates the cost of a meal including estimated janitorial supplies per customer
+SELECT menu."menuItem", sum(orderdecomposition.quantity * conversions."conversionFactor" * inventory.price) +
+        (SELECT sum(inventory.price * conversions."conversionFactor")
+        FROM conversions INNER JOIN inventory ON conversions.sku = inventory.sku
+            WHERE conversions."itemID" = 13) AS cost,
+       menu.name
+FROM orderdecomposition
+         INNER JOIN conversions ON orderdecomposition."itemID" = conversions."itemID"
+         INNER JOIN inventory ON conversions.sku = inventory.sku
+         INNER JOIN menu on menu."menuItem" = orderdecomposition."menuID"
+group by "menuItem"
+order by cost desc ;
+
+// Query 8
+// Shows which items in inventory must be kept cold, sorted alphabetically (for inventory purposes)
+SELECT inventory."itemName" AS ColdItems FROM inventory WHERE inventory."state" = 'Cold'
+ORDER by inventory."itemName";
+
+// Query 9
+// Determine which meals were ordered more than 20 times on Sunday
+SELECT orders."orderDate" as date, orders."menuItem" AS frequentOrder from orders WHERE orders."orderQuantity" > 20 AND orders."orderDate" = '2022-02-13';
+
+// Query 10
+// This query orders menu items from the least profitable to the most profitable
+SELECT menu."menuItem", menu.price - sum(orderdecomposition.quantity * conversions."conversionFactor" * inventory.price) AS cost,
+       menu.name
+FROM orderdecomposition
+INNER JOIN conversions ON orderdecomposition."itemID" = conversions."itemID"
+INNER JOIN inventory ON conversions.sku = inventory.sku
+INNER JOIN menu on menu."menuItem" = orderdecomposition."menuID"
+group by "menuItem"
+order by cost asc ;
+
+// Query 11
+// This query calculates the cost of a piece of texas toast
+SELECT sum(inventory.price * conversions."conversionFactor") as Result FROM conversions
+INNER JOIN inventory ON inventory.sku = conversions.sku
+WHERE conversions."itemID" = 2;
+
+// Query 12
+// Display all menu items that cost less than $5 in descending order by price (value menu)
+SELECT menu."menuItem", menu."name" as valueItems, menu."description", menu."price" from menu WHERE price < 5
+ORDER BY menu."price" DESC;
+
+
+// Query 13
+// Determine total cost of all items in greater demand than supply (for emergency restocking)
+SELECT sum(inventory."totalPrice") AS urgentRestockCost FROM inventory WHERE inventory."quantity" < 0;
+
+// Query 14
+//This query orders the ingredients of a club sanwich meal by most expensive to least expensive
+SELECT conversions.description, sum(orderdecomposition.quantity * conversions."conversionFactor" * inventory.price) AS cost
+FROM orderdecomposition
+         INNER JOIN conversions ON orderdecomposition."itemID" = conversions."itemID"
+         INNER JOIN inventory ON conversions.sku = inventory.sku
+WHERE orderdecomposition."menuID" = 507
+group by conversions.description
+order by cost desc ;
+
+// Query 15
+// This query shows how much money was earned from the 5 tender meal
+SELECT sum(orders."orderTotal") FROM orders WHERE orders."menuItem" = 501;
